@@ -11,6 +11,7 @@ ul{ list-style: none; padding: 0;}
 html{
     font-size: 15px;
     --ff: "Montserrat", sans-serif;
+    --os:'open sans', sans-serif;
 }
 
 body{
@@ -55,14 +56,29 @@ header nav a{ font-size: 12px; font-weight: 300; text-transform: uppercase; line
 .mobile-menu{ display: none; position: absolute; right: 1rem;  border: none; background: transparent; font-size: 24px; top: 14px;}
 
 
-.banner{ position: relative; background: #cdced2; }
-.social{ position: absolute; left: 0; top: 0; bottom: 0; background: #ededed; width: 64px;}
-.social a{ display: block; width: 64px; line-height: 64px; text-align: center; }
+.banner{ position: relative; background: linear-gradient(180deg, #c4c7cb, #c9ced2,#c8cdd0); }
+.social{ position: absolute; left: 0; top: 0; bottom: 0; background: #ededed; width: 64px; display: flex; flex-flow: column nowrap; justify-content: center;}
+.social a{ display: block; color: #171717; width: 64px; line-height: 64px; text-align: center; }
 .social p{ transform: rotate(-90deg); transform-origin: 65px 40px; white-space: nowrap; }
 
 .slider{}
 .slide{ display: none;}
 .slide.active{ display: block}
+.slide h2{ font-size: 116px; font-weight: 600;}
+.icons{ margin: 36px 0;}
+.icons li{ margin: 0 8px; }
+.icons li a{ display: block; width: 36px; text-align: center; line-height: 32px; border: 2px solid; color: #171717; border-radius: 50%; }
+.icons li:hover a{ background: #171717; color: #fff; border-color: #171717; }
+.slide p{ font: 14px var(--os); color: #535353; line-height: 26px; }
+.slide p + a{ display: block; width: 114px; line-height: 39px; text-align: center; background: #171717; color: #fff; border-radius: 20px; font-size: 10px; margin-top: 40px; }
+.deal-of-day{ position: absolute; right: 0; bottom: 0; background: url(../img/deal-of-day-bg.webp) no-repeat center center/cover; color: #fff; width: 33%; aspect-ratio: 577/482;}
+.deal-of-day img{ width: 40%; position: absolute; top: 0; bottom: 0; }
+.deal-content{ padding: 2rem 1rem 2rem calc(40% + 1rem); }
+.deal-content h3{ font-size: 36px; text-transform: uppercase;}
+.deal-content p{ margin: 20px 0;}
+.deal-content a{ display: block; background: #f3ebdc; font-size: 10px; color: #171717; width: 125px; line-height: 43px; border-radius: 21px; text-align: center;}
+.hour,.min,.sec{ font-size: 10px; background: #fff; color: #171717; margin: 20px 5px; text-align: center; border-radius: 10px;}
+:is(.hour, .min,.sec) b{ font-size: 2rem;}
 
 
 
@@ -75,6 +91,7 @@ header nav a{ font-size: 12px; font-weight: 300; text-transform: uppercase; line
 
     header nav li{ margin: 0 10px;}
     header nav li a{padding: 0 1rem;}
+    .slide h2{ font-size: 80px; }
 
 }
 
@@ -98,6 +115,8 @@ header nav a{ font-size: 12px; font-weight: 300; text-transform: uppercase; line
     .col-t-10{ flex-basis: 83.33%; max-width: 83.33%; }
     .col-t-12{ flex-basis: 100%; max-width: 100%; }
     header nav li a {padding: 0;}
+    .deal-of-day{ display: none;}
+    .banner-text{ padding-left: 64px;}
 }
 
 
@@ -117,6 +136,7 @@ header nav a{ font-size: 12px; font-weight: 300; text-transform: uppercase; line
     .col-m-12{ flex-basis: 100%; max-width: 100%; }
     .collapse{ display: none;}
     .mobile-menu{ display: inline-block;}
+    .slider h2{ font-size: 35px;}
 }
 
 
@@ -128,5 +148,5 @@ header nav a{ font-size: 12px; font-weight: 300; text-transform: uppercase; line
 
 
 @media screen and (max-width:359px){
-
+    body{}
 }
