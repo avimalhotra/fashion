@@ -38,6 +38,7 @@ body{
 .justify-space-between{ justify-content: space-between; }
 .justify-right{ justify-content: right; }
 .align-center{ align-items: center;}
+.justify-center{ justify-content: center;}
 .img-resp{ max-width: 100%; height: auto;}
 
 
@@ -81,7 +82,46 @@ header nav a{ font-size: 12px; font-weight: 300; text-transform: uppercase; line
 :is(.hour, .min,.sec) b{ font-size: 2rem;}
 
 
+main{ }
+.tabs{ margin: 70px 0; }
+.tabs ul{ }
+.tabs li{ margin: 0 16px; }
+.tabs ul li a{ display: block; font-size: 19px; font-weight: 600; color: #2d2b27; padding: 10px; }
+.tab-sm, .tab-lg{ position: relative; margin-bottom: 2rem; }
+.des{ font-size: 22px; position: absolute; bottom: 0; left: 0; right: 0; font-weight: 600; text-transform: uppercase; padding: 2rem; }
+.buy-des{ position: absolute; left: 2rem; top: 100px; }
+.shop-link{ width: 114px; line-height: 39px; background: #171717; color: #fff; display: block; border-radius: 20px; font-size: 12px; text-align: center; margin: 2rem 0;}
+.new{  position: relative; }
+.new::before{
+    content: "new";
+    background: #171717; 
+    color: #fff; 
+    font-size: 12px; 
+    padding: 3px 6px;
+    position: absolute; right: 10px; top: 10px;
+  }
+  .new::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 8px solid;
+    border-color: #171717 transparent transparent;
+    right: 40px;
+    top: 23px;
+    transform: rotate(135deg);
+ }
 
+ .ads{ background: #00b7d9; }
+
+ .product-type{ position: relative; text-align: center; padding: 6rem 0}
+ .product-content{ position: relative;  }
+ .product-content a{ position: absolute; bottom: 45px; left: 0; right: 0; display: block; width: 174px; line-height: 59px; background: #171717; color: #fff; border-radius: 30px; margin: auto; }
+ .feature-product{ position: relative; }
+
+
+ footer{ margin-top: -90px;}
+ .bg-gray{ padding: 230px 0 90px; background: #f8f8f8; }
+ .bg-white{  padding: 35px 0; background: #ffff; text-align: center;}
 
 
 
